@@ -4,7 +4,7 @@ In this case study, we would like to design an Azure storage solution ***Fabulou
 
 # Problem
 
- ***Fabulous.com*** company is experiencing strong growth and wants to migrate its storage infrastructure to Microsoft Azure in France to improve application performance, ensure data availability, and reduce operating costs.
+ ***Fabulous.com*** A French Ecommerce company is experiencing strong growth and wants to migrate its storage infrastructure to Microsoft Azure in France to improve application performance, ensure data availability, and reduce operating costs.
 
 The company manages several types of data:
 
