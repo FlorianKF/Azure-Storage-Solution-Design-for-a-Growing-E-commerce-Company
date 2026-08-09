@@ -24,3 +24,9 @@ Finally, the company plans to migrate several tens of terabytes of data to Azure
 ### Objective
 
 Design a secure, scalable, and cost-effective Azure Storage solution that meets the company's business and technical requirements.
+
+# Proposed solutions
+
+We will meet the Fabulous.com's technical and commercial requirements by offering Azure storage solutions based on selecting the storage services best suited to each workload, implementing an appropriate redundancy strategy, and choosing the best data migration solution to Azure.
+
+## 1. The Appropriate Azure Storage Services
