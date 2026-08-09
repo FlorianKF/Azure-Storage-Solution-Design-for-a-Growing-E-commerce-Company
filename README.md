@@ -30,3 +30,8 @@ Design a secure, scalable, and cost-effective Azure Storage solution that meets 
 We will meet the Fabulous.com's technical and commercial requirements by offering Azure storage solutions based on selecting the storage services best suited to each workload, implementing an appropriate redundancy strategy, and choosing the best data migration solution to Azure.
 
 ## 1. The Appropriate Azure Storage Services
+
+| Workload |Azure Account Services | Reasons|
+|----------|--------------|--------|
+|Product images | Azure Blob Storage |
+| Shared documents used by internal teams like:Delivery notes, shipping procedures, inventories, supplier documents Invoices, financial reports, budgets, supporting documents etc..|Azure Files|  Provides SMB file shares that employees can access from multiple devices|
