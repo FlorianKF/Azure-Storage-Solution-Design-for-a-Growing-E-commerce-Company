@@ -63,5 +63,8 @@ Therefore, GZRS clearly appears to be the best option for Mr. Dupont because:
 - Excellent durability for business-critical workloads
 - Very low Recovery Point Objective (RPO)
 - Suitable for an e-commerce platform where downtime directly impacts revenue
-
+  
 Although GZRS is more expensive than LRS or ZRS, but it provides the best balance between resilience and business continuity for Fabulous.com.
+
+
+# 4. So, how can we migrate Fabulous.com's existing backup data to Azure Storage?
