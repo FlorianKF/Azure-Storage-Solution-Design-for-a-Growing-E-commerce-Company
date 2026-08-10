@@ -34,6 +34,18 @@ We will meet the Fabulous.com's technical and commercial requirements by offerin
 | Workload |Azure Account Services | Reasons|
 |----------|--------------|--------|
 |Product images, log files, Regular backups | Azure Blob Storage |Optimized for unstructured data, scalable, cost-effective, and accessible via HTTP/HTTPS|
-|shipping procedures, inventories, supplier documents Invoices, financial reports, budgets, supporting documents etc..|Azure Files|  Provides SMB file shares that employees can access from multiple devices|
-|Customer profiles, User events, Delivery tracking, Orders, Inventory data, Recommendation data, etc.. | Table Storage |These are generally large quantities of structured or semi-structured NoSQL data for a rapidly growing website|
+|Shipping procedures, current invoices, current budgets, current financial report, current supplier documents etc..|Azure Files|  Provides SMB file shares that employees can access from multiple devices|
+|Customer profiles, user events, delivery tracking, orders, inventory data, Recommendation data, etc.. | Table Storage |These are generally large quantities of structured or semi-structured NoSQL data for a rapidly growing website|
+
+## 2. Let's choose the appropriate access tiers for Fabulous.com
+
+|Data | Access Tiers | Reasons|
+|-----|---|---|
+|Product images| Hot|Accessed frequently by website visitors and regular customers|
+|Regular backups and log files| cool |If they are primarily kept for analysis or compliance purposes and rarely consulted|
+|Old invoices, old financial reports, old budgets, supporting documents etc...|Archive| Historical documents rarely consulted, kept mainly for legal, accounting or compliance reasons|
+
+## 3. Redundancy Recommendation
+To address Mr. Dupont's specific concerns, we will propose different Azure Storage redundancy options to provide the best possible solution for Fabulous.com. Assuming that Fabulous.com selects the France Central Azure region as its primary region, we will evaluate the available options based on their level of protection, availability, and cost.
+
 
