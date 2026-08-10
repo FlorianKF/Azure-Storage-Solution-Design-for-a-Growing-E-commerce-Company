@@ -46,6 +46,22 @@ We will meet the Fabulous.com's technical and commercial requirements by offerin
 |Old invoices, old financial reports, old budgets, supporting documents etc...|Archive| Historical documents rarely consulted, kept mainly for legal, accounting or compliance reasons|
 
 ## 3. Redundancy Recommendation
-To address Mr. Dupont's specific concerns, we will propose different Azure Storage redundancy options to provide the best possible solution for Fabulous.com. Assuming that Fabulous.com selects the France Central Azure region as its primary region, we will evaluate the available options based on their level of protection, availability, and cost.
+To address Mr. Dupont's specific concerns, we will propose different Azure Storage redundancy options to provide the best possible solution for Fabulous.com. Assuming that Fabulous.com selects the FranceCentral Azure region as its primary region, we will evaluate the available options based on their level of protection, availability, and cost.
 
 
+|Options |Redundancy mechanisms |Protection level| Cost |
+|-------|---------------------|-----------------|---|
+|LRS|Fabulous.com's data will be replicated three times within a single datacenter in the FranceCentral region|Low (Datacenter failure)| Low|
+|ZRS|Fabulous.com's data will be replicated across three availability zones within the France Central region, ensuring that a copy of the data is maintained in each zone|Medium (Availability Zone failure)| Medium|
+|GRS|Fabulous.com's data will be replicated three times in the primary region, FranceCentral, and asynchronously replicated three additional times in the secondary region, FranceSouth| High (Regional disaster)|High|
+|GZRS|Three copies of Fabulous.com's data are replicated across three availability zones in the primary France Central region, while three oders copies are asynchronously replicated in three availability zone in secondary region FranceSud|Higher (Zone + Regional disaster)| Higher|
+
+Therefore, GZRS clearly appears to be the best option for Mr. Dupont because:
+
+- High availability across multiple Availability Zones
+- Geo-replication to a secondary Azure region
+- Excellent durability for business-critical workloads
+- Very low Recovery Point Objective (RPO)
+- Suitable for an e-commerce platform where downtime directly impacts revenue
+
+Although GZRS is more expensive than LRS or ZRS, but it provides the best balance between resilience and business continuity for Fabulous.com.
