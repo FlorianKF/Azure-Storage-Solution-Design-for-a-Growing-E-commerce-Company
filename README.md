@@ -36,4 +36,4 @@ We will meet the Fabulous.com's technical and commercial requirements by offerin
 |Product images, log files, Regular backups | Azure Blob Storage |Optimized for unstructured data, scalable, cost-effective, and accessible via HTTP/HTTPS|
 |shipping procedures, inventories, supplier documents Invoices, financial reports, budgets, supporting documents etc..|Azure Files|  Provides SMB file shares that employees can access from multiple devices|
 |Customer profiles, User events, Delivery tracking, Orders, Inventory data, Recommendation data, etc.. | Table Storage |These are generally large quantities of structured NoSQL data for a rapidly growing website|
-| Messages |Queue Storage| Interneal messages communication|
+
