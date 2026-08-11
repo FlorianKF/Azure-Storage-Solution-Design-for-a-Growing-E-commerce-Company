@@ -64,7 +64,32 @@ Therefore, GZRS clearly appears to be the best option for Mr. Dupont because:
 - Very low Recovery Point Objective (RPO)
 - Suitable for an e-commerce platform where downtime directly impacts revenue
   
-Although GZRS is more expensive than LRS or ZRS, but it provides the best balance between resilience and business continuity for Fabulous.com.
+Although GZRS is more expensive than LRS or ZRS, but it provides the best balance between resilience and business continuity for ***Fabulous.com** if it exists.
 
 
 # 4. So, how can we migrate Fabulous.com's existing backup data to Azure Storage?
+
+We can propose to Fabulous.com to migrate its existing backups to Azure Blob Storage using ***AzCopy*** whether the data volume and network bandwidth are suitable yet. But, for very large backup volumes or limited network connectivity, ***Azure Data Box*** can be used for the initial migration. Once the data is stored in Azure, an appropriate access tier can be selected based on how frequently the backups are accessed.
+
+```mermaid
+flowchart TD
+  A[Fabulous.com] -->|Existing Backups| B[On-premises Storage]
+ 
+
+  B -->|AzCopy| C[Azure Blob Storage]
+  B --> D[Azure Data Box - very large volumes]
+
+  C --> C1[Hot]
+  C --> C2[Cool]
+  C --> C3[Archive]
+```
+
+## Overall
+
+This case study is a learning simulation inspired by Microsoft Copilot and Artificial Intelligence. It explores how Azure Storage solutions could be used to meet the needs of an e-commerce company like Fabulous.com.
+
+Through this exercise, I explored storage services, access tiers, redundancy options, and data migration strategies, while considering factors such as cost, availability, scalability, and business continuity.
+
+***NOTE***: This is a simulated scenario created for learning purposes and does not represent the actual infrastructure of **Fabulous.com*** if exists.
+
+
